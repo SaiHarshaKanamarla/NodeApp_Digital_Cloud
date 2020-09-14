@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Data</title>
+</head>
+<body>
+
+    <h1>Testing your server</h1>
+    <hr>
+    <p>
+        Go to Chrome Dev Tools (F12) and look at your Console.<br>
+        Also check your Network tab.
+    </p>
+
+    <script>
+
+        fetch('http://YOU-IP-ADDRESS:3000/json')
+            .then(response => response.json())
+            .then(data => console.log(data));
+
+        fetch('http://YOU-IP-ADDRESS:3000/text')
+            .then(response => response.text())
+            .then(data => console.log(data));
+
+    </script>
+
+</body>
+</html>
